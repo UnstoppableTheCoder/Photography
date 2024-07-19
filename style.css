@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background: url("./photo.jpg");
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+#checkbox {
+    display: none;
+}
+
+.btn_one {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.btn_one i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px white;
+    position: absolute;
+    left: -300px;
+}
+
+.logo {
+    border: 2px solid rgba(255, 255, 255, 0.212);
+    box-shadow: 0 0 5px white;
+}
+
+.logo_text {
+    font-size: 30px;
+    padding: 20px 0 20px 20px;
+}
+
+.btn_two {
+    position: absolute;
+    top: 30px;
+    left: 85%;
+}
+
+.btn_two i {
+    font-size: 20px;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.menu {
+    position: absolute;
+    top: 100px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.menu li {
+    padding: 20px 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.menu li a i {
+    padding-right: 10px;
+}
+
+.social_media {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 50px;
+}
+
+.social_media_list a i {
+    color: rgb(190, 190, 190);
+    padding: 0 5px;
+    transition: all 0.2s linear;
+}
+
+#checkbox:checked ~ .sidebar {
+    left: 0px;
+}
+
+#checkbox:checked + .btn_one i {
+    opacity: 0;
+}
+
+.menu li:hover {
+    border: 2px solid rgba(255, 255, 255, 0.212);
+}
+
+.menu li:hover a {
+    font-size: 21px;
+}
+
+.btn_two i:hover {
+    font-size: 25px;
+    color: white;
+}
+
+.btn_one i:hover {
+    font-size: 35px;
+}
+
+.social_media_list a i:hover {
+    font-size: 20px;
+    color: white;
+}
